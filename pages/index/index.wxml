@@ -1,13 +1,14 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<input placeholder="输入名字" bindinput="addName"></input>
+<view>-----</view>
+<input placeholder="输入年龄" bindinput="addAge"></input>
+<button type="primary" plain bindtap="addData">添加数据</button>
+<view>=====</view>
+<button type="primary" plain bindtap="getData">查询数据</button>
+<view>=====</view>
+<input placeholder="删出数据ID" bindinput="delDataId"></input>
+<button type="primary" plain bindtap="delData">删除数据</button>
+<input placeholder="更新数据ID" bindinput="updateDataId"></input>
+<button type="primary" plain bindtap="updateData">更新数据</button>
 </view>
