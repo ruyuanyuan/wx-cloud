@@ -3,4 +3,9 @@
  <button type="primary" plain bindtap="sumNumber">第一个云函数</button>
   <view>+++++</view>
   <button type="primary" plain bindtap="getopenid">获取openid</button>
+   <view>+++++</view>
+  <button type="primary" plain bindtap="uploadEvent">上传图片</button>
+  <image src="{{imgUrl}}"></image>
+  <button type="primary" plain bindtap="uploadvideo">上传视频</button>
+  <image src="{{imgUrl}}"></image>
 </view>
